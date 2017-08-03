@@ -1,0 +1,100 @@
+<html>
+      <head>
+        <meta charset="UTF-8">
+        <title>README.md</title>
+      </head>
+      <body>
+        <h1 id="slicknav-v1-0-10">SlickNav v1.0.10</h1>
+<h2 id="responsive-mobile-menu-jquery-plugin">Responsive Mobile Menu jQuery Plugin</h2>
+<p><a href="https://gitter.im/ComputerWolf/SlickNav?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><img src="https://badges.gitter.im/Join%20Chat.svg" alt="Join the chat at https://gitter.im/ComputerWolf/SlickNav"></a></p>
+<p>###<a href="http://slicknav.com">SlickNav.com</a></p>
+<h3 id="features">Features</h3>
+<ul>
+<li>Multi-level menu support</li>
+<li>Flexible, simple markup</li>
+<li>Cross-browser compatibility</li>
+<li>Keyboard Accessible</li>
+<li>Degrades gracefully without JavaScript</li>
+<li>Creates ARIA compliant menu</li>
+</ul>
+<hr>
+<h3 id="usage">Usage</h3>
+<p>####Include the CSS &amp; JS
+slicknav.css can be modified to fit website design</p>
+<pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;SlickNav/dist/slicknav.min.css&quot; /&gt;
+&lt;script src=&quot;SlickNav/dist/jquery.slicknav.min.js&quot;&gt;&lt;/script&gt;
+</code></pre><p>####Menu Markup</p>
+<pre><code>&lt;ul id=&quot;menu&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;item 1&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;item 2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;item 3&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;item 4&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre><p>####Initialize</p>
+<pre><code>&lt;script&gt;
+    $(function(){
+        $(&#39;#menu&#39;).slicknav();
+    });
+&lt;/script&gt;
+</code></pre><h3 id="options">Options</h3>
+<pre><code>&#39;label&#39; : &#39;MENU&#39;, // Label for menu button. Use an empty string for no label.
+&#39;duplicate&#39;: true, // If true, the mobile menu is a copy of the original.
+&#39;duration&#39;: true, // The duration of the sliding animation.
+&#39;easingOpen&#39;: &#39;swing&#39;, // Easing used for open animations.
+&#39;easingClose&#39;: &#39;swing&#39; // Easing used for close animations.
+&#39;closedSymbol&#39;: &#39;&amp;#9658;&#39;, // Character after collapsed parents.
+&#39;openedSymbol&#39;: &#39;&amp;#9660;&#39;, // Character after expanded parents.
+&#39;prependTo&#39;: &#39;body&#39;, // Element, jQuery object, or jQuery selector string to prepend the mobile menu to.
+&#39;appendTo&#39;: &#39;&#39;, // Element, jQuery object, or jQuery selector string to append the mobile menu to. Takes precedence over prependTo.
+&#39;parentTag&#39;: &#39;a&#39;, // Element type for parent menu items.
+&#39;closeOnClick&#39;: false, // Close menu when a link is clicked.
+&#39;allowParentLinks&#39;: false // Allow clickable links as parent elements.
+&#39;nestedParentLinks&#39;: true // If false, parent links will be separated from the sub-menu toggle.
+&#39;showChildren&#39;: false // Show children of parent links by default.
+&#39;removeIds&#39;: true // Remove IDs from all menu elements. Defaults to false if duplicate set to false.
+&#39;removeClasses&#39;: false // Remove classes from all menu elements.
+&#39;brand&#39;: &#39;&#39; // Add branding to menu bar.
+&#39;animations&#39;: &#39;jquery&#39; // Animation library. Currently supports &quot;jquery&quot; and &quot;velocity&quot;.
+</code></pre><h3 id="callbacks">Callbacks</h3>
+<pre><code>&#39;init&#39;: function(){}, // Called after SlickNav creation
+&#39;beforeOpen&#39;: function(trigger){}, // Called before menu or sub-menu opened.
+&#39;beforeClose&#39;: function(trigger){} // Called before menu or sub-menu closed.
+&#39;afterOpen&#39;: function(trigger){} // Called after menu or sub-menu opened.
+&#39;afterClose&#39;: function(trigger){} // Called after menu or sub-menu closed.
+</code></pre><h3 id="methods">Methods</h3>
+<pre><code>$(&#39;.menu&#39;).slicknav(&#39;toggle&#39;); // Method to toggle the menu
+$(&#39;.menu&#39;).slicknav(&#39;open&#39;); // Method to open the menu
+$(&#39;.menu&#39;).slicknav(&#39;close&#39;); // Method to close the menu
+</code></pre><h3 id="animations">Animations</h3>
+<p>SlickNav will use jQuery for animations by default. If you wish to use Velocity.js for animating, be sure to include the library in your code before including SlickNav.</p>
+<h3 id="menu-display">Menu Display</h3>
+<p>Without any additional configuration, both the original and mobile menus will be displayed. It is recommended to use media queries to hide the original menu and display the mobile menu when appropriate. Modernizr or similar can be used for graceful degradation.</p>
+<p>For example:</p>
+<pre><code>.slicknav_menu {
+    display:none;
+}
+
+@media screen and (max-width: 40em) {
+    /* #menu is the original menu */
+    .js #menu {
+        display:none;
+    }
+
+    .js .slicknav_menu {
+        display:block;
+    }
+}
+</code></pre><p>More examples at <a href="http://slicknav.com">SlickNav.com</a></p>
+<h3 id="browser-support">Browser Support</h3>
+<ul>
+<li>Chrome</li>
+<li>Firefox</li>
+<li>Safari</li>
+<li>Opera</li>
+<li>IE7+</li>
+<li>Android Browser</li>
+<li>iOS Safari</li>
+</ul>
+
+      </body>
+    </html>

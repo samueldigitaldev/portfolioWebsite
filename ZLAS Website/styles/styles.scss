@@ -1,0 +1,1273 @@
+/* SCSS Imports */
+
+@import '_animations';
+
+/* SCSS Variables */
+
+$basefont: 'Roboto', sans-serif;
+$buttonfont: 'Hammersmith One', sans-serif;
+$zlasgreen: #21b375;
+
+/* Normalize, Clearfix and Flexbox */
+
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */
+input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+* { box-sizing: border-box; font-family: $basefont; }
+
+/* End of Normalize, Clearfix and Flexbox */
+
+/* Body Styles */
+
+body{
+	width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+.wrapper{
+	width: 80%;
+	margin: 0 auto;
+}
+
+.slicknav_menu {
+	display:none;
+}
+
+
+/* End of Body Styles */
+
+/* Beginning of Header */
+
+header{
+/* 	Background image credit: http://thepatternlibrary.com/ */
+
+	background-repeat: no-repeat;
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('../img/carlos-muza-84523.jpg');
+	background-size: cover;
+
+	nav{
+		width: 100%;
+		position: fixed;
+		z-index: 1;
+	
+		
+		ul{
+			width: 80%;
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-start;
+			list-style-type: none;
+			margin: 0 auto;
+			padding: 0;
+			justify-content: space-around;
+			font-size: 12px;
+	
+			a{
+				color: white;
+				text-decoration: none;
+				text-transform: uppercase;
+				padding-top: 15px;
+
+
+				&:hover:not(:first-child) {
+    				color: $zlasgreen;
+					background-color: white;
+
+				}
+
+				li{
+					padding: 10px 30px 20px 30px;
+			
+				}
+			}
+		}
+	}
+}
+
+
+
+.feature{
+	padding: 50px;
+	margin: 0 auto;
+
+
+
+	h1{
+		font-size: 30px;
+		letter-spacing: 2px;
+		color: white;
+		text-align: center;
+		padding-bottom: 20px;
+		margin-top: 200px;
+		margin-bottom: 5px;		
+		color: white;
+	    background: -webkit-linear-gradient(45deg, #67B26F,#4ca2cd);
+	   -webkit-background-clip: text;
+	   -webkit-text-fill-color: transparent;
+		
+	}
+
+	.underline{
+		border-bottom: 1px solid $zlasgreen;
+		text-align: center;
+		margin: 0 auto;
+		width: 10%;
+
+	}
+
+	p{
+		font-size: 12px;
+		font-weight: 300;
+		color: white;
+		text-align: center;
+		font-family: $basefont;
+		width: 60%;
+		line-height: 20px;
+		margin: 0 auto;
+		margin-bottom: 25px;
+		margin-top: 20px;
+	}
+
+	a{
+			
+		display: block;
+		width: 25%;
+		margin: 0 auto;
+		color: $zlasgreen;
+		font-family: $buttonfont;
+		text-align: center;
+		padding: 10px;
+		border: 1px solid $zlasgreen;
+		margin-bottom: 150px;
+		text-decoration: none;
+
+		&:hover{
+			color: black;
+			background-color: $zlasgreen;
+		}
+	}
+}
+
+
+/* Beginning of About Me */
+
+#about{
+	padding-top: 100px;
+	.about{
+	padding-bottom: 100px;
+	width: 75%;
+	margin: 0 auto;
+		img{
+			margin: 0 auto;
+			text-align: center;
+			display: block;
+		}
+
+		.wrapper{
+
+			.about-border{
+			padding: 25px;
+			border: 0.5px solid lightgrey;
+			border-radius: 5px;
+
+				h2{
+						width: 100%;
+						margin: 0 auto;
+						line-height: 10px;
+						font-size: 20px;
+						letter-spacing: 1px;
+						font-weight: bold;
+						display: inline-block;
+						text-align: center;
+						font-family: $basefont;
+					
+
+					}
+
+				.underline{
+				border-bottom: 1px solid $zlasgreen;
+				text-align: center;
+				margin: 0 auto;
+				width: 10%;
+				padding-bottom: 15px;
+				}
+
+				p{
+					padding-top: 25px;
+					width: 80%;
+					margin: 0 auto;
+					text-align: center;
+					display: block;
+					font-size: 14px;
+					font-family: $basefont;
+					
+				}
+			}
+		}
+	}
+}
+
+/* Feature*/
+
+.cover{
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('../img/ZLAS-35.jpg');
+	height: 300px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 25px;
+    background-position: center left;
+
+    i{
+    	width: 100%;
+    	margin: 0 auto;
+    	text-align: center;
+    	padding-top: 60px;
+    	font-size: 120px;
+		background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+		color:transparent;
+		-webkit-background-clip: text;
+		background-clip: text;
+
+    }
+    p{
+    	width: 100%;
+    	margin: 0 auto;
+    	text-align: center;
+   		margin-top: 20px;
+    	font-size: 20px;
+    	font-family: $basefont;
+    	background-image: -webkit-gradient(linear, left top, right top, color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+		color:transparent;
+		-webkit-background-clip: text;
+		background-clip: text;
+
+    }
+ 
+}
+
+/* Training */
+
+.training{
+	text-align: center;
+	padding-top: 80px;
+
+	color: black;
+	.wrapper{
+		
+		h2{
+			
+			font-size: 20px;
+			
+		}
+		p{
+			font-size: 18px;
+
+		}
+		.underline{
+			border-bottom: 1px solid $zlasgreen;
+			text-align: center;
+			margin: 0 auto;
+			width: 10%;
+			margin-bottom: 25px;
+		}
+		.flex{
+		   display: flex;
+		   flex-direction: row;
+		   flex-wrap: wrap;
+		
+			.training-provided{
+				width: 33.33%;
+
+				i{
+				    background: -webkit-linear-gradient(45deg, #67B26F,#4ca2cd);
+				   -webkit-background-clip: text;
+				   -webkit-text-fill-color: transparent;
+		    		font-size: 80px;
+				}
+				.training-desc{
+					width: 70%;
+					margin: 0 auto;
+					font-size: 14px;
+					line-height: 15px;
+					margin-bottom: 20px;
+					color: gray;
+
+				}
+
+			}
+
+		}
+		.training-calendar{
+			margin-bottom: 25px;
+		}
+	}
+}
+
+.cover-linkedin{
+		
+	background: url('../img/bg4.jpg');
+	height: 300px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 25px;
+    background-position: center left;
+
+        i{
+    	width: 100%;
+    	margin: 0 auto;
+    	text-align: center;
+    	padding-top: 60px;
+    	font-size: 120px;
+		background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+		color:transparent;
+		-webkit-background-clip: text;
+		background-clip: text;
+
+    }
+    	p{
+    	width: 100%;
+    	margin: 0 auto;
+    	text-align: center;
+   		margin-top: 20px;
+    	font-size: 20px;
+    	font-family: $basefont;
+    	background-image: -webkit-gradient(linear, left top, right top, color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+		color:transparent;
+		-webkit-background-clip: text;
+		background-clip: text;
+
+    }
+	
+}
+
+/* Consulting Projects */
+
+.consulting{
+	text-align: center;
+	padding-top: 100px;
+	background-image: url(../img/bg4.jpg);
+	background-size: cover;
+
+	.wrapper{
+		width: 100%;
+		h2{
+			margin-top: 0px;
+			font-size: 20px;
+			width: 100%;
+			color: white;
+
+		}
+		p{
+			font-size: 18px;
+			width: 100%;
+			color: white;
+		}
+		.underline{
+			border-bottom: 1px solid $zlasgreen;
+			text-align: center;
+			margin: 0 auto;
+			width: 10%;
+			margin-bottom: 25px;
+		}
+		.flex{
+		   display: flex;
+		   flex-direction: row;
+		   flex-wrap: wrap;
+		  
+			}
+			
+				.consulting-projects{
+					width: 33.33%;
+					text-align: center;
+					margin-bottom: 20px;
+
+					.consulting-projects-underline{
+						border-bottom: 1px solid $zlasgreen;
+						text-align: center;
+						margin: 0 auto;
+						width: 50%;
+					}
+	
+					.consulting-client{
+						filter: grayscale(0%);
+					}				
+	
+					img{
+						filter: grayscale(100%);
+						width: 75%;
+					}
+
+					img + p{
+						
+						font-size: 20px;
+						font-weight: bold;
+						color: white;
+						}
+					}			
+			}
+		}
+	
+
+
+
+/* Partnerships */
+
+.partnerships{
+	text-align: center;
+	padding-top: 100px;
+
+
+	.wrapper{
+		width: 100%;
+		h2{
+			margin-top: 0px;
+			font-size: 20px;
+			width: 100%;
+
+		}
+		p{
+			font-size: 18px;
+			width: 100%;
+		}
+		.underline{
+			border-bottom: 1px solid $zlasgreen;
+			text-align: center;
+			margin: 0 auto;
+			width: 10%;
+			margin-bottom: 25px;
+		}
+		.flex{
+		   display: flex;
+		   flex-direction: row;
+		   flex-wrap: wrap;
+		  
+			.partnerships-organization{
+				 width: 20%;
+				 img + p{
+				 	font-size: 20px;
+				 	font-weight: bold;
+				}
+			}
+
+			.partnerships-advisory{
+				background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+			    url('../img/toronto.jpg');
+			    background-size: cover;
+			    color: white;
+				width: 100%;
+				margin-top: 25px;
+				padding-top: 25px;
+
+				h2{
+					padding-top: 50px;
+				}
+				
+			
+				.partnerships-council{
+					width: 25%;
+					text-align: center;
+					margin-bottom: 20px;
+					.partnerships-council-underline{
+						border-bottom: 1px solid $zlasgreen;
+						text-align: center;
+						margin: 0 auto;
+						width: 50%;
+					}
+					img{
+						filter: grayscale(100%);
+					}
+					img + p{
+							color: $zlasgreen;
+							font-size: 20px;
+							font-weight: bold;
+
+						}
+					.partnerships-positions{
+						font-size: 14px;
+					}
+					h3{
+					font-size: 20px;
+					}
+					i + p{
+						margin-bottom: 25px;
+					}
+				}			
+			}
+		}
+	}
+}
+
+/* Contact Form*/
+
+
+.contact {
+    background-color: white;
+	width: 100%;
+    display: flex;
+    text-align: center;
+
+
+	section.form{
+		width: 100%;
+	    margin: auto;
+	    flex-direction: row;
+	}
+
+	h3{
+		width: 70%;
+		text-align: left;	
+		margin: 0 auto;
+		font-family: $basefont;
+		color: black;
+		font-size: 16px;
+		font-weight: bold;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		margin-top: 100px;
+
+	}
+
+
+	input, textarea{
+	    margin-top: 20px;
+	    width: 70%;
+	    height: 50px;
+	    padding-left: 10px;
+	    font-weight: 200;
+	    border: solid 0.5px gray;
+	    font-family: $basefont;
+	    font-size: 12px;
+
+	}
+
+	textarea#message{
+    
+	    padding-bottom: 150px;
+	    border: solid 0.5px gray;
+	    word-wrap: break-word;
+	    overflow: hidden;
+	    line-height: 30px;
+
+
+	}
+
+	#submit{
+    
+	    color: black;
+	    border: solid 0.5px $zlasgreen;
+	    font-weight: 500;
+	    width: 30%;
+	    margin-right: 40%;
+	    background-color: $zlasgreen;
+		font-size: 10px;
+		border: none;
+		font-weight: bold;
+	}
+
+	input{
+		width: 70%;
+	}
+
+	.button{
+		margin-top: 10px;
+		width: 30%;
+		height: 30px;
+		background-color: $zlasgreen;
+		font-size: 10px;
+		border: none;
+		font-weight: bold;
+	}
+
+	aside{
+	    flex-direction: row;
+	    width: 100%;
+	    text-align: left;
+	    
+	    img{
+	    	width: 30%;
+	    }
+	    h3{
+			
+			margin-left: 0;
+	
+	    }
+
+	    input{
+	    	width: 45%;
+	    	height: 40px;
+	    }
+	}
+}
+
+
+/*FOOTER CSS*/
+
+#footer {
+    background-color: #121116;
+   	margin-top: 25px;
+   	padding-top: 50px;
+    text-align: center;
+    .footer-logo {
+  
+	}
+	.footer-social {
+
+	  	ul{
+	  	padding: 0;
+		  	li{
+			width: 3%;
+			display: inline-block;
+			font-size: 25px;
+				a {
+				  color: #fff;
+				  display: block;
+				  margin: 0 8px;
+				  :hover {
+					  color: #21b375;
+					}
+				}
+	    	}
+    	}
+    	p{
+    		color: white;
+    		font-size: 12px;
+    		padding-bottom: 50px;
+    		margin-bottom: 0px;
+    	}
+	}
+}
+
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+
+.slicknav_menu {
+	display: block;
+	position: fixed;
+	}
+
+.slicknav_nav{
+
+	li{
+		color: $zlasgreen;
+		font-family: $basefont;
+		font-size: 12px;
+		text-transform: uppercase;
+		font-weight: bold;
+
+		img{
+			display: none;
+		}
+	}
+}
+
+ 	a{
+		display: none;
+	}
+
+
+	#about{
+
+		.about{
+
+			.wrapper{
+				width: 100%;
+				.about-border{
+					
+					p{
+					width: 100%;
+					font-size: 16px;
+						
+					}
+				}
+			}
+		}
+	}
+
+	#about{
+		padding-top: 20px;
+		.about{
+		padding-bottom: 25px;
+		width: 90%;
+
+		}
+	}
+
+	.training{
+		padding-top: 50px;
+
+		.wrapper{
+			width: 100%;
+		}
+	}
+
+
+.consulting{
+	
+	.wrapper{
+		h2{
+			font-size: 20px
+		}
+		p{
+			font-size: 14px;
+		}
+					
+		.consulting-projects{
+		
+			img{
+
+				width: 75%;
+			}
+
+			img + p{
+
+					font-size: 16px;
+
+			}
+		}				
+	}
+}
+
+
+
+	.partnerships{
+		padding-top: 75px;
+		.wrapper{
+
+			.flex{
+
+				.partnerships-organization{
+					 width: 30%;
+					 margin: 0 auto;
+					img + p{
+					 	font-size: 18px;
+					 	font-weight: bold;
+					}
+				}
+
+				.partnerships-advisory{
+				
+					.partnerships-council{
+						img + p{
+					
+							font-size: 16px;
+						}
+					
+						.partnerships-positions{
+							font-size: 12px;
+							width: 80%;
+							margin: 0 auto;
+							margin-bottom: 12px;
+
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.contact {
+
+			h3{
+				margin-top: 50px;
+			}
+		
+		aside{
+			margin-top: 50px;
+		    flex-direction: row;
+		    width: 100%;
+		    text-align: left;
+		    
+		    img{
+		    	width: 40%;
+		    	height: 100px;
+		    }
+		    h3{
+				margin-top: 0px;
+			
+		    }
+		    input{
+		    	width: 50%;
+		    }
+		}
+	}
+
+
+	#footer {
+
+		.footer-social {
+
+		  	ul{
+		
+			  	li{
+				width: 5%;
+		    	}
+	    	}
+		}
+	}
+
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+
+
+
+	html{
+		overflow-x: hidden; 
+	}
+
+	header{
+		height: 500px;;
+
+		.feature{
+			width: 90%;
+			padding-left: 0px;
+			padding-right: 0px;
+
+			h1{
+				font-size: 22px;
+				margin-top: 100px;
+					
+			}
+
+			p{
+				font-size: 11.5px;
+				width: 100%;
+				
+			}
+
+			a{
+				width: 30%;
+			}
+		}
+	}
+
+
+	#about{
+		
+		.about{
+
+			.wrapper{
+
+				.about-border{
+
+					h2{
+						
+						font-size: 20px;
+						
+					}
+
+					p{
+	
+						font-size: 12px;
+		
+					}
+				}
+			}
+		}
+	}
+
+
+.training{
+	
+		padding-top: 50px;
+
+		.wrapper{
+			width: 90%;
+			h2{
+				font-size: 20px;
+				
+			}
+			p{
+				font-size: 14px;
+
+			}
+
+			.flex{
+
+				.training-provided{
+					width: 50%;
+					.training-desc{
+						font-size: 11px;
+					}
+				}
+			}
+		}
+	}
+
+	.cover-linkedin{
+
+	    	p{
+	    	font-size: 14px;
+
+	    }
+	}
+
+
+	.consulting{
+		
+		.wrapper{
+
+			.consulting-projects{
+
+				width: 50%;
+				text-align: center;			
+				margin: 0 auto;
+				margin-bottom: 20px;
+
+				img{
+
+					width: 90%;
+				}
+
+				img + p{
+
+						font-size: 16px;
+
+				}
+			}				
+		}
+	}
+
+
+
+	.partnerships{
+		margin-top: 200px;
+		.wrapper{
+			p{
+				font-size: 14px;
+			}	
+			.flex{
+
+				.partnerships-organization{
+					 width: 50%;
+					 
+				}
+
+				.partnerships-advisory{
+					
+					.partnerships-council{
+						
+						width: 50%;
+						margin: 0 auto;
+
+						img + p{
+							font-size: 18px;
+						}
+
+						.partnerships-positions{
+							font-size: 12px;
+							width: 80%;
+							margin: 0 auto;
+							
+
+						}
+						.partnerships-council-underline{
+							margin-top: 10px;
+							margin-bottom: 10px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.contact {
+		display: block;
+		flex-direction: none;
+
+
+		aside{
+		    
+		    flex-direction: none;
+    		display: block;
+			margin-top: 50px;
+			flex-direction: none;
+			text-align: center;
+			width: 70%;
+			margin: 0 auto;
+		    
+		    
+		    h3{
+				
+				margin-left: 0;
+				display: block;
+				text-align: left;
+				margin: 0 auto;
+				width: 100%;
+				margin-top: 20px;
+		
+		    }
+			img{
+		    	
+	    		width: 100%;
+		    	height: 150px;
+		    }
+
+		    input{
+				padding-right: 10px;
+		    	margin-bottom: 5px;
+		    	width: 60%;
+		    	height: 40px;
+		    }
+		}
+	}
+
+
+
+
+
+	#footer {
+
+		.footer-social {
+
+		  	ul{
+		
+			  	li{
+				width: 8%;
+		    	}
+	    	}
+		}
+	}
+
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+
+	header{
+		height: 450px;;
+
+		.feature{
+			width: 90%;
+
+			h1{
+				font-size: 18px;
+				margin-top: 75px;
+					
+			}
+
+			p{
+				font-size: 11px;
+				width: 100%;
+				
+			}
+
+			a{
+				width: 40%;
+				font-size: 14px;
+			}
+		}
+	}
+	
+	#about{
+		
+		.about{
+
+			.wrapper{
+
+				.about-border{
+
+					h2{
+						
+						font-size: 16px;
+						
+					}
+
+					p{
+	
+						font-size: 12px;
+		
+					}
+				}
+			}
+		}
+	}
+
+
+.training{
+	
+		padding-top: 50px;
+
+		.wrapper{
+			
+			h2{
+				font-size: 18px;
+				
+			}
+			p{
+				font-size: 14px;
+
+			}
+	
+			.flex{
+	
+			
+				.training-provided{
+					width: 90%;
+					margin: 0 auto;
+
+				}
+			}
+		}
+	}
+
+	.cover-linkedin{
+
+	    	p{
+	    	font-size: 12px;
+
+	    }
+		
+	}
+
+	.consulting{
+	
+		.wrapper{
+						
+			.consulting-projects{
+
+				width: 90%;
+				text-align: center;			
+				margin: 0 auto;
+				margin-bottom: 20px;
+
+				img{
+
+					width: 90%;
+				}
+
+				img + p{
+
+						font-size: 16px;
+
+				}
+			}				
+		}
+	}
+
+
+
+	.partnerships{
+		margin-top: 450px;
+		.wrapper{
+			
+			.underline{
+				margin-top: 15px;
+			}
+
+			h2{
+				font-size: 16px;
+			}
+			p{
+				width: 90%;
+				margin: 0 auto;
+			}
+			.flex{
+
+				.partnerships-organization{
+					 width: 90%;
+					 img + p{
+					 	font-size: 16px;
+					 	font-weight: bold;
+					}
+				}
+
+				.partnerships-advisory{
+					h2{
+						font-size: 18px;
+					}
+					p{
+						font-size: 14px;
+					}
+					.partnerships-council{
+						width: 90%;
+
+						img + p{
+							padding-top: 10px;
+							padding-bottom: 10px;
+							font-size: 18px;
+
+						}
+
+						.partnerships-positions{
+							font-size: 10px;
+							width: 80%;
+
+						}
+						
+					}
+					h3{
+						font-size: 20px;
+					}
+					i + p{
+						margin-bottom: 25px;
+					}
+				}
+			}
+		}
+	}
+
+
+	.contact {
+
+		aside{
+		    
+		    flex-direction: none;
+    		display: block;
+			margin-top: 50px;
+			flex-direction: none;
+			text-align: center;
+			width: 100%;
+			margin: 0 auto;
+		    
+		    
+		    h3{
+				
+				margin-left: 0;
+				display: block;
+				text-align: left;
+				margin: 0 auto;
+				width: 70%;
+				margin-top: 20px;
+		
+		    }
+			img{
+		    	
+	    		width: 80%;
+		    	height: 150px;
+		    }
+
+		    input{
+				padding-right: 10px;
+		    	margin-bottom: 5px;
+		    	width: 45%;
+		    	height: 40px;
+		    }
+		}
+	}
+
+	#footer {
+
+		.footer-social {
+
+		  	ul{
+		
+			  	li{
+				width: 10%;
+		    	}
+	    	}
+		}
+	}
+}
+ 
+

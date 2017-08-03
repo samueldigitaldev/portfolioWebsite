@@ -1,0 +1,879 @@
+/* BEGINNING OF WHOLE DOC CODE */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block; }
+
+audio, canvas, video {
+  display: inline-block; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+[hidden] {
+  display: none; }
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+a:focus {
+  outline: thin dotted; }
+
+a:active, a:hover {
+  outline: 0; }
+
+h1 {
+  font-size: 2em; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b, strong {
+  font-weight: 700; }
+
+dfn {
+  font-style: italic; }
+
+mark {
+  background: #ff0;
+  color: #000; }
+
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+q {
+  quotes: \201C \201D \2018 \2019; }
+
+small {
+  font-size: 80%; }
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -.5em; }
+
+sub {
+  bottom: -.25em; }
+
+img {
+  border: 0; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em; }
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0; }
+
+button, input {
+  line-height: normal; }
+
+button, html input[type=button],
+input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+button[disabled], input[disabled] {
+  cursor: default; }
+
+input[type=checkbox], input[type=radio] {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0; }
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+textarea {
+  overflow: auto;
+  vertical-align: top; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body, figure {
+  margin: 0; }
+
+legend, button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0; }
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif; }
+
+.wrapper {
+  max-width: 1280px;
+  min-width: 100%;
+  margin: 0 auto; }
+
+.cred, .logo, .slider, section, footer, nav {
+  width: 75%;
+  margin: 0 auto; }
+
+.clear {
+  clear: both; }
+
+h1, h2, h3, h1 + p, h2 + ul, nav ul, .slider, .logo {
+  text-align: center; }
+
+h1, h2 {
+  margin-top: 75px;
+  font-weight: 300;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1.2; }
+
+h1 + p {
+  font-weight: 300;
+  font-size: 12px;
+  color: #949494; }
+
+a {
+  text-decoration: none; }
+
+a:visited {
+  color: black; }
+
+a:active {
+  color: black; }
+
+a:link {
+  color: black; }
+
+a:hover {
+  color: #8cab68; }
+
+/* END OF WHOLE DOC CODE */
+/* BEGINNING OF HEADER */
+header .credcolor {
+  background-color: #2b2b2b;
+  color: #8f8f8f;
+  font-size: 10px;
+  text-transform: uppercase;
+  padding: 10px; }
+  header .credcolor .cred ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; }
+    header .credcolor .cred ul li {
+      padding: 7px; }
+      header .credcolor .cred ul li:nth-child(-n+3) {
+        float: left; }
+      header .credcolor .cred ul li:nth-child(n+4) {
+        float: right; }
+
+/* END OF HEADER */
+/* BEGINNING OF NAV */
+nav {
+  clear: both; }
+  nav .logo {
+    margin-top: 25px;
+    margin-bottom: 15px; }
+  nav ul {
+    margin-bottom: 0px;
+    padding: 0px; }
+    nav ul li {
+      padding: 5px;
+      margin: 0px 15px 15px 15px;
+      text-transform: uppercase;
+      font-size: 12px;
+      display: inline-block; }
+    nav ul i {
+      padding: 5px;
+      margin: 0px 5px 15px 5px; }
+
+/* END OF NAV */
+/* BEGINNING OF SLIDER */
+.slider {
+  background-image: url(../images/plant_hero.jpeg);
+  background-size: cover;
+  width: 100%; }
+  .slider img {
+    margin-top: 100px;
+    height: 30%;
+    width: 40%; }
+  .slider p {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 25px; }
+  .slider div {
+    display: inline-block;
+    padding: 10px 35px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    font-size: 12px; }
+  .slider .product {
+    color: white;
+    background-color: #2b2b2b; }
+  .slider .all {
+    color: #2b2b2b;
+    background-color: #d9de55; }
+
+/* END OF SLIDER */
+/* BEGINNING OF WELCOME CONTENT */
+.welcome div {
+  float: left;
+  width: 33.33%;
+  text-align: center; }
+  .welcome div img {
+    padding: 5px 2.5px 5px 2.5px; }
+  .welcome div p {
+    font-weight: 300;
+    font-size: 14px; }
+
+/* END OF WELCOME CONTENT */
+/* BEGINNING OF FEATURED ITEMS */
+.background {
+  background-color: #f1f1f1; }
+  .background .feature h2 {
+    padding-top: 75px;
+    font-size: 25px;
+    text-transform: uppercase; }
+  .background .feature ul {
+    padding-left: 0px; }
+    .background .feature ul li {
+      display: inline-block;
+      font-weight: bold;
+      font-size: 12px;
+      text-transform: uppercase;
+      padding: 0px 40px 30px 0px; }
+  .background .feature .feature-items {
+    width: 60%;
+    float: left;
+    font-size: 14px;
+    margin-bottom: 50px; }
+    .background .feature .feature-items .feature-items-wrapper {
+      width: 50%;
+      float: left; }
+      .background .feature .feature-items .feature-items-wrapper img {
+        position: relative;
+        margin-left: 10%; }
+      .background .feature .feature-items .feature-items-wrapper p {
+        position: relative;
+        width: 65%;
+        margin: 0 auto;
+        bottom: 75px;
+        text-align: center; }
+      .background .feature .feature-items .feature-items-wrapper .feature-items-price {
+        position: relative;
+        bottom: 60px;
+        display: block;
+        text-align: center;
+        color: lightgray;
+        font-size: 10px;
+        margin-top: -5px; }
+      .background .feature .feature-items .feature-items-wrapper div {
+        position: relative;
+        bottom: 20px;
+        display: block;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold; }
+      .background .feature .feature-items .feature-items-wrapper .feature-items-whitespace {
+        background-color: white;
+        width: 78%;
+        padding-bottom: 25%;
+        margin: 0 auto; }
+        .background .feature .feature-items .feature-items-wrapper .feature-items-whitespace p {
+          clear: both;
+          background-color: #8cab68;
+          color: white;
+          width: 100%;
+          padding-top: 8%;
+          padding-bottom: 8%; }
+      .background .feature .feature-items .feature-items-wrapper .cart {
+        position: relative;
+        bottom: 25px;
+        display: block;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        background-color: #8cab68;
+        padding: 15px;
+        width: 78%;
+        margin: 0 auto; }
+  .background .feature .info {
+    width: 40%;
+    float: left;
+    border: white solid 5px;
+    position: relative; }
+    .background .feature .info h3 {
+      float: left;
+      margin: 40px 20px 20px;
+      color: black;
+      font-size: 20px;
+      text-align: left;
+      line-height: 25px; }
+      .background .feature .info h3 span {
+        color: #8cab68; }
+    .background .feature .info p {
+      clear: both;
+      margin-left: 20px;
+      margin-right: 20px;
+      font-size: 12px;
+      color: #949494;
+      line-height: 15px; }
+    .background .feature .info img {
+      position: relative;
+      left: 200px; }
+    .background .feature .info p.view {
+      margin-top: 30px;
+      padding-bottom: 50px;
+      color: black;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 10px;
+      letter-spacing: 1px; }
+      .background .feature .info p.view span {
+        position: relative;
+        bottom: 9px;
+        border-bottom: 0.5px solid black; }
+
+/* END OF FEATURED ITEMS */
+/* BEGINNING OF BANNER */
+.banner {
+  clear: both;
+  background-image: url(../images/plants_wide.jpeg);
+  background-size: cover;
+  background-position: center;
+  text-align: center; }
+  .banner img {
+    margin: 100px; }
+
+/* END OF BANNER */
+/* BEGINNING OF BLOG */
+.blog img {
+  width: 50%;
+  float: left; }
+
+.blog .blog1 {
+  padding-right: 7.5px; }
+
+.blog .blog2 {
+  padding-left: 7.5px; }
+
+.blog .blog-date {
+  width: 15%;
+  float: left; }
+  .blog .blog-date .blog-number {
+    margin-top: 20px;
+    font-size: 6em;
+    font-weight: bold;
+    color: rgba(236, 236, 236, 0.8);
+    text-align: center; }
+  .blog .blog-date .blog-month {
+    position: relative;
+    bottom: 65px;
+    left: 0px;
+    font-weight: bold;
+    font-size: 25px;
+    color: #8cab68;
+    text-align: center; }
+
+.blog .blog-description {
+  width: 35%;
+  float: left; }
+  .blog .blog-description .blog-headline {
+    padding: 20px 0px 10px 0px;
+    font-size: 16px;
+    font-weight: bold; }
+  .blog .blog-description span {
+    color: #8cab68;
+    font-size: 10px; }
+  .blog .blog-description .blog-blurb {
+    padding-top: 10px;
+    font-size: 10px;
+    margin-right: 5px; }
+
+section h2.blog {
+  text-transform: uppercase;
+  padding-bottom: 20px; }
+
+/* END OF BLOG */
+/* BEGINNING OF FOOTER */
+.footer-wrap {
+  margin-top: 20px;
+  padding-top: 80px;
+  background-image: url(../images/footer_bg.jpg);
+  background-size: cover; }
+  .footer-wrap footer {
+    clear: both;
+    text-align: center; }
+    .footer-wrap footer .footer {
+      width: 33.33%;
+      float: left;
+      margin-bottom: 50px; }
+      .footer-wrap footer .footer h3 {
+        text-transform: uppercase;
+        font-size: 12px;
+        color: white;
+        margin-bottom: 50px; }
+      .footer-wrap footer .footer p {
+        color: #858585;
+        font-size: 10px;
+        width: 75%;
+        margin: 0 auto;
+        line-height: 20px; }
+      .footer-wrap footer .footer ul {
+        padding-left: 0px; }
+        .footer-wrap footer .footer ul li {
+          display: inline-block; }
+          .footer-wrap footer .footer ul li i {
+            color: white;
+            padding: 5px; }
+      .footer-wrap footer .footer h3 + ul li {
+        display: block;
+        color: #858585;
+        font-size: 10px;
+        padding: 3px; }
+      .footer-wrap footer .footer input {
+        width: 80%; }
+      .footer-wrap footer .footer button {
+        margin-top: 10px;
+        width: 30%;
+        height: 30px;
+        background-color: yellow;
+        font-size: 10px;
+        border: none;
+        font-weight: bold; }
+
+/* END OF FOOTER */
+/* START OF NEW PAGE - ABOUT US */
+/* START OF ABOUT US BANNER*/
+.about-banner {
+  background-image: url(../images/plants_wide.jpeg);
+  background-size: cover;
+  width: 100%; }
+  .about-banner .about-overlay {
+    background: rgba(140, 171, 104, 0.82);
+    overflow: hidden;
+    height: 100%;
+    z-index: 2; }
+    .about-banner .about-overlay h1 {
+      color: white;
+      font-style: 15px;
+      margin-top: 0px;
+      padding: 75px;
+      letter-spacing: 2px; }
+
+/* END OF ABOUT US BANNER*/
+/* START OF ABOUT BREADCRUMB AND GIRL */
+section.breadcrumb {
+  width: 100%;
+  border-bottom: 1px solid;
+  border-bottom-color: #e7e7e7; }
+  section.breadcrumb div {
+    width: 75%;
+    margin: 0 auto; }
+    section.breadcrumb div ul {
+      padding-left: 0; }
+      section.breadcrumb div ul li {
+        display: inline-block;
+        font-size: 10px;
+        padding: 5px; }
+
+.girl-tree {
+  margin-top: -50px; }
+  .girl-tree p {
+    position: relative;
+    width: 58%;
+    left: 20px;
+    top: 500px;
+    background-color: white;
+    padding: 20px 10px 20px 20px;
+    color: rgba(140, 171, 104, 0.82);
+    text-decoration: underline;
+    line-height: 22px;
+    z-index: 1; }
+  .girl-tree img {
+    margin-top: 0px;
+    position: relative;
+    width: 100%;
+    height: 500px; }
+
+/* END OF ABOUT BREADCRUMB AND GIRL */
+/* START OF SERVICE TILES STYLES */
+.service {
+  margin-top: 100px; }
+  .service div {
+    width: 25%;
+    float: left;
+    text-align: center;
+    background-color: whitesmoke;
+    border: 1px solid white; }
+    .service div img {
+      margin-top: 100px;
+      margin-bottom: 25px; }
+  .service h2 {
+    margin: 0;
+    font-size: 12px;
+    font-weight: bold;
+    color: rgba(140, 171, 104, 0.82);
+    letter-spacing: 1px; }
+  .service p {
+    padding-top: 5px;
+    font-size: 10px;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 150px; }
+  .service .service-delivery {
+    background-image: url(../images/bg_logo_left.png);
+    background-size: cover; }
+  .service .service-discount {
+    background-image: url(../images/bg_logo_right.jpg);
+    background-size: cover; }
+
+/* END OF SERVICE TILES STYLES */
+/* START OF ABOUT BANNER STYLES */
+.banner-about {
+  clear: both;
+  background-image: url(../images/flower_pots.jpeg);
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: white; }
+  .banner-about .banner-overlay {
+    background: rgba(196, 191, 206, 0.5);
+    overflow: hidden;
+    height: 100%;
+    z-index: 2;
+    padding: 75px; }
+    .banner-about .banner-overlay p {
+      width: 80%;
+      margin: 0 auto;
+      font-weight: 100;
+      font-style: italic;
+      padding-bottom: 10px;
+      letter-spacing: 1px; }
+    .banner-about .banner-overlay .banner-name {
+      color: white;
+      background-color: black;
+      font-size: 12px;
+      border: 1px black solid;
+      width: 15%;
+      padding-top: 5px;
+      padding-bottom: 3px;
+      margin: 0 auto;
+      margin-bottom: 5px;
+      font-weight: 800; }
+    .banner-about .banner-overlay .banner-student {
+      font-size: 8px; }
+
+/* END OF ABOUT BANNER STYLES */
+/* START OF TILED STYLES */
+section.tiled {
+  width: 100%;
+  margin-bottom: -22px; }
+  section.tiled img {
+    float: left;
+    width: 12.5%; }
+
+/* END OF OF NEW PAGE - ABOUT US */
+/* START OF NEW PAGE - CONTACT US */
+/* START OF CONTACT GARDEN */
+.contact-garden .contact-container {
+  position: relative;
+  width: 90%;
+  left: 5%;
+  top: 550px;
+  padding: 20px 10px 20px 20px;
+  color: rgba(140, 171, 104, 0.82);
+  text-decoration: underline;
+  line-height: 22px;
+  z-index: 1; }
+  .contact-garden .contact-container .contact-info {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    margin-top: -150px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: white;
+    font-size: 10px; }
+    .contact-garden .contact-container .contact-info img {
+      padding-top: 50px;
+      margin-top: -60px; }
+    .contact-garden .contact-container .contact-info p {
+      font-size: 12px;
+      font-weight: bold;
+      color: black; }
+
+.contact-garden .contact-image {
+  position: relative;
+  margin-top: -20px;
+  margin-bottom: 50px;
+  width: 100%;
+  height: 500px; }
+
+/* END OF CONTACT GARDEN */
+/* START OF CONTACT FORM */
+.contact-form img {
+  width: 50%;
+  float: left; }
+
+.contact-form .contact-form-wrapper {
+  width: 48%;
+  margin-left: 2%;
+  float: left; }
+  .contact-form .contact-form-wrapper form {
+    margin: 0 auto;
+    text-align: center; }
+    .contact-form .contact-form-wrapper form h2 {
+      font-weight: bold;
+      letter-spacing: 2px;
+      margin-top: 0px; }
+    .contact-form .contact-form-wrapper form p {
+      font-size: 12px;
+      color: gray; }
+    .contact-form .contact-form-wrapper form label {
+      font-size: 12px;
+      font-weight: bold;
+      margin: 20px; }
+    .contact-form .contact-form-wrapper form input, .contact-form .contact-form-wrapper form textarea {
+      background-color: lightgray;
+      border: none;
+      width: 100%;
+      margin-bottom: 20px;
+      margin-top: 10px; }
+    .contact-form .contact-form-wrapper form input#submit {
+      color: white;
+      background-color: green;
+      width: 30%;
+      margin-top: -5px;
+      font-size: 8px;
+      font-weight: bold;
+      padding: 10px; }
+
+/* END OF CONTACT FORM */
+/* END OF OF NEW PAGE - CONTACT US */
+/* START OF RESPONSIVE DESIGN */
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  .cred, .logo, .slider, section, footer, nav {
+    width: 100%;
+    margin: 0 auto; }
+  .background .feature .info img {
+    position: relative;
+    left: 100px; }
+  .girl-tree {
+    margin-top: -50px;
+    margin: 0 auto;
+    text-align: center; }
+    .girl-tree p {
+      width: 58%;
+      left: 50px;
+      top: 400px;
+      text-align: center; }
+    .girl-tree img {
+      margin-top: -50px;
+      position: relative;
+      width: 80%;
+      height: 500px; }
+  .banner-about .banner-overlay p {
+    width: 75%; }
+  .banner-about .banner-overlay .banner-name {
+    width: 20%; }
+  .contact-form .contact-form-wrapper {
+    width: 48%;
+    margin: 0 auto; }
+    .contact-form .contact-form-wrapper form {
+      margin-left: 4%; } }
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  nav {
+    width: 70%; }
+    nav ul {
+      display: none; }
+  .slider .slider-image {
+    height: 70%;
+    width: 60%; }
+  .welcome div {
+    width: 55%;
+    float: none;
+    margin: 0 auto; }
+  .background .feature ul li {
+    padding: 8px; }
+  .background .feature .feature-items {
+    width: 100%;
+    float: none;
+    margin: 0 auto; }
+    .background .feature .feature-items .feautre-items-wrapper p {
+      font-size: 12px; }
+  .girl-tree {
+    margin-top: -50px;
+    margin: 0 auto; }
+    .girl-tree p {
+      font-size: 10px;
+      width: 55%;
+      left: 45px;
+      top: 300px;
+      text-align: center; }
+    .girl-tree img {
+      margin-top: -50px;
+      position: relative;
+      width: 80%;
+      height: 400px; }
+  .info {
+    display: none; }
+  .banner-about .banner-overlay p {
+    width: 100%;
+    font-size: 11px; }
+  .banner-about .banner-overlay .banner-name {
+    width: 25%;
+    font-size: 8px; }
+  .contact-garden .contact-container {
+    top: 425px; }
+    .contact-garden .contact-container .contact-info img {
+      width: 20%; }
+    .contact-garden .contact-container .contact-info p {
+      font-size: 10px; }
+  .contact-garden .contact-image {
+    width: 100%;
+    height: 400px; }
+  .blog img {
+    display: none; }
+  .blog .blog-wrapper {
+    display: inline-block; }
+    .blog .blog-wrapper .blog-date {
+      width: 30%; }
+    .blog .blog-wrapper .blog-description {
+      width: 70%; }
+  .contact-form {
+    width: 100%;
+    text-align: center; }
+    .contact-form img {
+      width: 80%;
+      height: 400px;
+      float: none;
+      margin: 0 auto; }
+    .contact-form .contact-form-wrapper {
+      width: 100%;
+      clear: both; }
+      .contact-form .contact-form-wrapper form {
+        width: 70%;
+        margin: 0 auto; }
+        .contact-form .contact-form-wrapper form h2 {
+          margin-top: 10px; }
+  .footer-wrap footer {
+    width: 70%; }
+    .footer-wrap footer .footer {
+      width: 50%; }
+    .footer-wrap footer #footer-subscribe {
+      display: none; } }
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  html, body {
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; }
+  .welcome div {
+    width: 70%;
+    float: none;
+    margin: 0 auto; }
+  .slider {
+    font-size: 12px; }
+  .background .feature .feature-items .feature-items-wrapper p {
+    font-size: 12px;
+    bottom: 60px; }
+  .background .feature .feature-items .feature-items-wrapper .feature-items-price {
+    bottom: 50px; }
+  .girl-tree {
+    margin-top: -50px;
+    margin: 0 auto; }
+    .girl-tree p {
+      font-size: 8px;
+      text-align: left;
+      width: 60%;
+      left: 30px;
+      top: 280px; }
+    .girl-tree img {
+      margin-top: -50px;
+      position: relative;
+      width: 100%;
+      height: 350px; }
+  .banner-about .banner-overlay p {
+    width: 100%;
+    font-size: 8px;
+    margin: 0; }
+  .banner-about .banner-overlay .banner-name {
+    width: 35%;
+    font-size: 8px; }
+  .contact-garden .contact-container {
+    top: 350px; }
+    .contact-garden .contact-container .contact-info img {
+      width: 20%; }
+    .contact-garden .contact-container .contact-info p {
+      font-size: 7px; }
+  .contact-garden .contact-image {
+    width: 100%;
+    height: 300px; }
+  .contact-form {
+    width: 90%;
+    text-align: center; }
+    .contact-form img {
+      width: 100%;
+      height: 300px;
+      float: none;
+      margin: 0 auto; }
+    .contact-form .contact-form-wrapper {
+      width: 100%;
+      clear: both; }
+      .contact-form .contact-form-wrapper form {
+        width: 100%;
+        margin: 0 auto; }
+        .contact-form .contact-form-wrapper form p {
+          font-size: 10px; }
+  .footer-wrap footer {
+    width: 90%; }
+    .footer-wrap footer .footer {
+      width: 50%; }
+    .footer-wrap footer #footer-subscribe {
+      display: none; } }
